@@ -44,20 +44,36 @@ console.log("scelta utente: " + userChoice);
 console.log("scelta numero utente: " + userNumber);
 
 
-let randomCpu = 0 ;
-
 
 
 function randomNumber() {
-let random = Math.floor(Math.random() * max) + min ;
+
+let random = 0;
+random = Math.floor(Math.random() * max) + min ;
 
 return random
     
 }
 
-let random = randomNumber();
+const random = randomNumber();
 
+console.log("numero CPU: " + random);
 
  function result(){
-     resultNumber = randomNumber
+     
+    let numbersResult = random + userNumber;
+    
+    return numbersResult;
  }
+
+numbersResult = result();
+
+ console.log("somma: " + numbersResult)
+
+ if(numbersResult % 2 == 0 && userChoice == "paro" || (numbersResult % 2 !== 0 && userChoice == "disparo")){
+    alert("l'utente ha vinto")
+ }
+    else{
+        alert("il Bot ha vinto")
+    }
+ 
