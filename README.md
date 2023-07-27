@@ -22,3 +22,5 @@ Dichiariamo chi ha vinto.
 - utilizzo un for per scorrere la stringa lettera per lettera partendo dall'ultima ("i" = lunghezza parola == 0)
 
 - la confronto, altrimenti richiedo
+
+-
