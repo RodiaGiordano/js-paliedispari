@@ -40,22 +40,24 @@ const userNumber = parseInt(prompt("inserisci un numero compreso fra " + max + "
 
 
 
-console.log(userChoice);
-console.log(userNumber);
+console.log("scelta utente: " + userChoice);
+console.log("scelta numero utente: " + userNumber);
 
 
 let randomCpu = 0 ;
 
 
+
 function randomNumber() {
-let random = Math.floor(Math.random() * (5 - 1));
+let random = Math.floor(Math.random() * max) + min ;
 
 return random
     
 }
 
-randomNumber()
-
-console.log("Numero CPU " + randomNumber())
+let random = randomNumber();
 
 
+ function result(){
+     resultNumber = randomNumber
+ }
