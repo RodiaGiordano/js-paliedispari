@@ -1,11 +1,11 @@
- let userWord ="";
+
 
 
 const inputUser = prompt("inserisci una parola");
 
+let userWord ="";
 
-
- function stringReverse(){
+ function inputUser(){
      for (let i = inputUser.length -1; i >= 0; i--){
 
     
@@ -24,51 +24,54 @@ const inputUser = prompt("inserisci una parola");
          }    
  }
 
- stringReverse();
+ inputUser();
 
 
 
-// const max = 5;
-// const min = 1;
+const max = 5;
+const min = 1;
 
-// const userChoice = prompt("inserisci paro o disparo")
+const userChoice = prompt("inserisci paro o disparo")
 
-// const userNumber = parseInt(prompt("inserisci un numero compreso fra " + max + " e " + min))
+const userNumber = parseInt(prompt("inserisci un numero compreso fra " + max + " e " + min))
+
+console.log(userNumber)
+
+console.log(typeof userNumber)
 
 
-// console.log("scelta utente: " + userChoice);
-// console.log("scelta numero utente: " + userNumber);
+
+console.log("scelta utente: " + userChoice);
+console.log("scelta numero utente: " + userNumber);
 
 
-// function randomNumber() {
+function randomNumber() {
 
-// let random = 0;
-// random = Math.floor(Math.random() * max) + min ;
-//  return random   
-// }
+let random = 0;
+random = Math.floor(Math.random() * (max - min + 1) + min); 
+ return random   
+}
 
-// const random = randomNumber();
+const random = randomNumber();
 
-// console.log("numero CPU: " + random);
+console.log("numero CPU: " + random);
 
-//  function result(){
+ function result(){
      
-//     let numbersResult = random + userNumber;
+    let numbersResult = random + userNumber;
     
-//     return numbersResult;
-//  }
+    return numbersResult;
+ }
 
-// numbersResult = result();
+numbersResult = result();
 
-//  console.log("somma: " + numbersResult)
+ console.log("somma: " + numbersResult)
 
-//  if(numbersResult % 2 == 0 && userChoice == "paro" || (numbersResult % 2 !== 0 && userChoice == "disparo")){
-//     alert("l'utente ha vinto")
-//  }
-//     else{
-//         alert("il Bot ha vinto")
-//     }
+ if(numbersResult % 2 == 0 && userChoice == "paro" || (numbersResult % 2 !== 0 && userChoice == "disparo")){
+    alert("l'utente ha vinto")
+ }
+    else{
+        alert("il Bot ha vinto")
+    }
  
-// console.log(result())
-// console.log(result())
-// console.log(result())
+console.log(result())
